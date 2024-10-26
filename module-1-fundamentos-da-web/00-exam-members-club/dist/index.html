@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&display=swap" rel="stylesheet">
+
+    <link rel="icon" href="./src/assets/scissors.svg" />
+    <link rel="stylesheet" href="./src/styles/index.css" />
+
+    <title>Members Club</title>
+  <script defer src="main.js"></script></head>
+  <body>
+    <div class="container">
+      <header>
+        <img src="./src/assets/logo.svg" alt="Logo" class="logo" />
+
+        <form class="form">
+          <input type="text" placeholder="Buscar cliente" class="search" />
+          <button type="submit" class="button">Adicionar cliente</button>
+        </form>
+      </header>
+
+      <div class="content">
+        <aside id="account" class="account">
+          <section id="account-info">
+            <img src="./src/assets/Avatar.svg" alt="Avatar" />
+
+            <div>
+              <h2 class="title-sm">Natália Miranda</h2>
+              <p class="text-xs">Cliente desde <span>18/09/2023</span></p>
+            </div>
+          </section>
+
+          <section id="discount-history">
+            <header>
+              <h3 class="subtitle-sm">Histórico</h3>
+              <p class="text-xs">7 cortes</p>
+            </header>
+            <ul id="coupon-history" class="coupon-list">
+              <!-- Exemplo  -->
+              <li class="coupon">
+                <div>
+                  <strong class="subtitle-sm">29/04/2024</strong>
+                  <span class="text-xs">18:30</span>
+                </div>
+                <img
+                  src="./src/assets/cancel.svg"
+                  alt="Cancelar"
+                  class="cancel-icon"
+                />
+              </li>
+            </ul>
+          </section>
+        </aside>
+
+        <main class="discount">
+          <section class="discount-card">
+            <header>
+              <div>
+                <h3 class="subtitle-sm">Cartão fidelidade</h3>
+                <p class="text-sm">09h-12h</p>
+              </div>
+
+              <p>ID: 124-537-835-230</p>
+            </header>
+          </section>
+
+          <section class="discount-status">
+            <div></div>
+            <div></div>
+          </section>
+        </main>
+      </div>
+    </div>
+  </body>
+</html>
